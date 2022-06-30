@@ -1,14 +1,54 @@
 :root {
-  --light-color: rgb(153, 176, 252);
-  --medium-color: rgb(84, 109, 192);
+  --light-color: rgb(219, 227, 253);
+  --medium-color: rgb(133, 150, 206);
   --dark-color: rgb(67, 87, 155);
   --large-font-size: 4rem;
-  --medium-font-size: 2rem;
-  --small-font-size: 1rem;
+  --medium-font-size: 2.5rem;
+  --small-font-size: 1.5rem;
 }
 
 * {
   color: var(--dark-color);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-color);
+}
+
+p {
+  color: var(--medium-color);
+  text-align: justify;
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+h3 {
+  color: var(--medium-color);
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 40%;
+}
+
+.center-align {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.heading {
+  text-align: left;
+  font-size: var(--medium-font-size);
+  margin: 1rem;
+  text-shadow: 1.5px 1.5px 2px var(--medium-color);
 }
 
 /*main page*/
@@ -17,13 +57,13 @@
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
 }
 
 .opacity-layer {
   background-color: rgb(255, 255, 255, 0.5);
-  height: 90vh;
+  height: 100%;
   width: 100%;
 }
 
@@ -45,5 +85,61 @@
 /*about-us*/
 .about-us-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1000px;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.about-us-item {
+  min-width: 300px;
+  max-width: 470px;
+  margin-top: 1rem;
+  padding: 0;
+  flex: 25%;
+  display: block;
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 35rem;
+  overflow: hidden;
+}
+
+/*service section*/
+.service-banner {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  display: flex;
+  background-image: url(/resources/background2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 70vh;
+}
+
+.service-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 900px;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+.service-item {
+  min-width: 300px;
+  max-width: 470px;
+  margin-top: 1rem;
+  padding: 0;
+  flex: 25%;
+  display: block;
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 35rem;
+  overflow: hidden;
 }
