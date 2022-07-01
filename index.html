@@ -145,19 +145,28 @@
       </div>
     </div>
 
-    <div class="center-align">
-      <div class="contact-container">
-        <p>title</p>
+    <div class="contact-container">
+      <div class="opacity-layer">
+        <h1 class="form-title">Contact Form</h1>
         <form action="">
-          <label for="name"></label>
-          <input type="text" />
-          <label for="email"></label>
-          <input type="email" />
-          <label for="subject"></label>
-          <input type="text" />
-          <label for="message"></label>
-          <input type="text" />
+          <div class="input-containers">
+            <div class="input-container">
+              <input type="text" placeholder="Name" class="input-left" />
+              <input type="email" placeholder="Email" class="input-left" />
+              <input type="text" placeholder="Subject" class="input-left" />
+            </div>
+            <div class="input-container">
+              <textarea
+                name=""
+                placeholder="Message"
+                rows="10"
+                cols="50"
+                class="input-right"
+              ></textarea>
+            </div>
+          </div>
         </form>
+        <button>Send</button>
       </div>
     </div>
   </body>
