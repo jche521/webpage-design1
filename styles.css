@@ -204,3 +204,16 @@ form {
   line-height: 100%;
   outline: none;
 }
+
+button {
+  border: none;
+  border-radius: 1em;
+  background-color: rgb(255, 255, 255);
+  width: 8vw;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
