@@ -1,7 +1,7 @@
 :root {
-  --light-color: rgb(219, 227, 253);
-  --medium-color: rgb(133, 150, 206);
-  --dark-color: rgb(67, 87, 155);
+  --light-color: rgb(219, 230, 253);
+  --medium-color: rgb(133, 162, 206);
+  --dark-color: rgb(67, 98, 155);
   --large-font-size: 4rem;
   --medium-font-size: 2.5rem;
   --small-font-size: 1.5rem;
@@ -117,7 +117,7 @@ img {
   background-image: url(/resources/background2.jpg);
   background-attachment: fixed;
   background-size: cover;
-  height: 70vh;
+  height: 85vh;
 }
 
 .service-container {
@@ -152,14 +152,14 @@ img {
   display: flex;
   background: url(/resources/img10.jpg);
   background-size: cover;
-  height: 75vh;
+  height: 90vh;
   width: 100%;
 }
 
 .form-title {
   text-align: center;
-  padding-top: 8vh;
-  padding-bottom: 3vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
   font-size: var(--medium-font-size);
   margin: 0;
   text-shadow: 3px 3px 3px var(--medium-color);
@@ -168,7 +168,7 @@ img {
 input {
   background-color: rgb(255, 255, 255, 0.6);
   border: none;
-  padding: 0.5rem;
+  padding: 0.8rem;
   outline: none;
 }
 
@@ -211,9 +211,30 @@ button {
   background-color: rgb(255, 255, 255);
   width: 8vw;
   padding: 1rem;
-  margin: 1rem;
+  margin: 4rem;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  color: var(--light-color);
+}
+/*navbar*/
+.navbar {
+  position: fixed;
+  position: top;
+  height: 15vh;
+  width: 100vw;
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
