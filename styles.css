@@ -48,7 +48,8 @@ img {
 .heading {
   text-align: left;
   font-size: var(--medium-font-size);
-  margin: 1rem;
+  margin: 1.5rem;
+  margin-top: 13vh;
   text-shadow: 1.5px 1.5px 2px var(--medium-color);
 }
 
@@ -70,7 +71,7 @@ img {
 
 .title {
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 40vh;
   font-size: var(--large-font-size);
   margin: 0;
   text-shadow: 3px 3px 3px var(--medium-color);
@@ -232,9 +233,33 @@ a:hover {
   position: fixed;
   position: top;
   height: 15vh;
+  min-height: 60px;
   width: 100vw;
   background-color: var(--dark-color);
   display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-items {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  height: 10vh;
+  width: 90vw;
+}
+
+i {
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 6.5vh;
+  right: 5vw;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--light-color);
 }
