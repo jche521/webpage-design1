@@ -1,0 +1,9 @@
+responsive
+- font size
+- navbar
+- contact form
+
+overflow in textboxes
+- read more feature?
+
+store data for form

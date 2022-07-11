@@ -93,12 +93,12 @@ img {
   max-width: 1000px;
   justify-content: center;
   gap: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 2.5% 0 2.5%;
   margin: 0;
 }
 
 .about-us-item {
-  min-width: 300px;
+  min-width: 270px;
   max-width: 470px;
   margin-top: 1rem;
   padding: 0;
@@ -129,7 +129,7 @@ img {
   max-width: 900px;
   justify-content: center;
   gap: 3rem;
-  padding: 0 1rem;
+  padding: 0 2.5% 0 2.5%;
   margin: 0;
 }
 
@@ -184,7 +184,7 @@ form {
   width: 100%;
   max-width: 1000px;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 0;
   margin: 0;
 }
 
@@ -194,7 +194,7 @@ form {
   gap: 1.5rem;
   width: 45%;
   height: 100%;
-  margin: 1.25%;
+  margin: 1%;
 }
 
 .input-right {
@@ -232,12 +232,11 @@ a:hover {
 .navbar {
   position: fixed;
   position: top;
-  height: 15vh;
-  min-height: 60px;
+
   width: 100vw;
   background-color: var(--dark-color);
   display: none;
-  flex-direction: row;
+
   justify-content: start;
   align-items: center;
   z-index: 1;
@@ -250,12 +249,33 @@ a:hover {
 
 .navbar-items {
   display: flex;
-  flex-direction: row;
+
+  transition: 1s;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-  width: 90vw;
-  transition: 1s;
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    height: 15vh;
+    min-height: 60px;
+    flex-direction: row;
+  }
+  .navbar-items {
+    height: 10vh;
+    width: 90vw;
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 100vh;
+  }
+  .navbar-items {
+    height: 70vh;
+    width: 90vw;
+    flex-direction: column;
+  }
 }
 
 i {
@@ -263,7 +283,7 @@ i {
   display: flex;
   position: fixed;
   top: 6.5vh;
-  right: 5vw;
+  right: 10vw;
   z-index: 2;
 }
 
