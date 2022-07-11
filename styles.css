@@ -236,10 +236,16 @@ a:hover {
   min-height: 60px;
   width: 100vw;
   background-color: var(--dark-color);
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: start;
   align-items: center;
+  z-index: 1;
+  transition: 1s;
+}
+
+.active {
+  display: flex;
 }
 
 .navbar-items {
@@ -249,6 +255,7 @@ a:hover {
   align-items: center;
   height: 10vh;
   width: 90vw;
+  transition: 1s;
 }
 
 i {
@@ -257,6 +264,7 @@ i {
   position: fixed;
   top: 6.5vh;
   right: 5vw;
+  z-index: 2;
 }
 
 i:hover {
