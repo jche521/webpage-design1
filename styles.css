@@ -55,7 +55,7 @@ img {
 
 /*main page*/
 .main-page {
-  background-image: url(/resources/background1.jpg);
+  background-image: url(./resources/background1.jpg);
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -115,7 +115,7 @@ img {
   margin-top: 15vh;
   margin-bottom: 5vh;
   display: flex;
-  background-image: url(/resources/background2.jpg);
+  background-image: url(./resources/background2.jpg);
   background-attachment: fixed;
   background-size: cover;
   height: 85vh;
@@ -151,7 +151,7 @@ img {
   margin-top: 15vh;
   margin-bottom: 15vh;
   display: flex;
-  background: url(/resources/img10.jpg);
+  background: url(./resources/img10.jpg);
   background-size: cover;
   height: 90vh;
   width: 100%;
